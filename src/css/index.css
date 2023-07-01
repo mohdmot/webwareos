@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+}
+
+
+body {
+    background-color: rgb(53, 53, 53);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.Container {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: 530px;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+    background-color: rgba(14, 14, 14, 0.7);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.Box {
+    padding: 50px;
+    width: 100%;
+}
+
+.Box h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.Box h1 span {
+    color: #222222;
+    -webkit-text-stroke: 1.5px #ffffff;
+}
+
+.Box h2 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.InputBox {
+    position: relative;
+    height: 52px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    margin: 32px 0;
+}
+
+.InputBox label {
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all ease .40s;
+}
+
+.InputBox input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 30px 0 6px;
+}
+
+.InputBox input:focus~label,
+.InputBox input:valid~label {
+    top: -3px;
+}
+
+.button {
+    width: 100%;
+    height: 45px;
+    background: #ffffff;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+    cursor: pointer;
+}
