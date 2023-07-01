@@ -1,65 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebwareOS</title>
-    <style>
-        @font-face {
-        font-family: 'Terminal Medium';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Terminal Medium'), url('Terminal.woff') format('woff');
-        }
-        .input {
-            font-family:'Terminal Medium';
-            width: 200px;
-            border-radius: 6px;
-            border: 2px #ffffff solid;
-            background-color: rgb(41, 41, 41);
-            color: whitesmoke;
-        }
-        .button {
-            border-radius: 6px;
-            border: 2px #ffffff solid;
-            font-family:'Terminal Medium';
-            width: 200px;
-            background-color: rgb(20, 20, 20);
-            color: whitesmoke;
-        }
-        #box {
-            border: 2px #fff solid;
-            border-radius: 20px;
-            width: 320px;
-            height: 160px;
-            background-image: linear-gradient(to right, rgb(53, 53, 53) ,  #000 );
-        }
-        body {
-            background-image : url('img/bgs/bg<?php echo rand(0,9) ?>.jpg');
-        }
-    </style>
-</head>
-<body style="font-family:'Terminal Medium'; background-color: rgb(53, 53, 53);color: whitesmoke;">
-    <center>
-        <img src="img/logo.png" alt="" style="width: 70%;">
-        <form action="api/login.php">
-            <div id="box">
-                <br>
-                <input name="usr" type="text" placeholder="Username" class="input"><br><br>
-                <input name="psw" type="password" placeholder="Password" class="input">
-                <br>
-                <p style="font-family:'Terminal Medium';color: rgb(204, 12, 12);">
-                <?php
-                if (isset($_GET['err'])) {
-                    echo $_GET['err'];
-                }
-                ?>
-               </p>
-                <input type="submit" value="Login" class="button">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+        <title>WebwareOS</title>
+    </head>
+
+    <body style="background-image : url('img/bgs/bg<?php echo rand(0,9) ?>.jpg');">        
+        <div class="Container">
+            <div class="Box">
+                <h1>Webware<span>OS</span></h1>
+                <h2>Login</h2>
+                <form action="api/login.php">
+                    <div class="InputBox">
+                        <input name="usr" type="text" class="input">
+                        <label>Username</label>
+                    </div>
+                    <div class="InputBox">
+                        <input name="psw" type="password" class="input">
+                        <label>Password</label>
+                    </div>
+                    <p style="">
+                    <?php
+                    if (isset($_GET['err'])) {
+                        echo "<span style='background-color: white; color: #222222; width: fit-content; border-radius: 5px; padding: 3px 3px 3px 3px; font-weight: 600; margin: 0 auto; display: block; margin-bottom: 20px;'><span style='color: red;'>Wrong</span> Username OR Password</span>";
+                    }
+                    ?>
+                    </p>
+                    <input type="submit" value="Login" class="button">
+                </form>
             </div>
-        </form>
-    </center>
-    <p style="position: absolute; left:10px; bottom: 10px;">WebwareOS 0.1.0</p>
-</body>
+        </div>
+        <!-- <p style="left:10px; bottom: 10px;">WebwareOS 0.1.0</p> --> 
+    </body>
 </html>
