@@ -12,6 +12,6 @@ if ($usr == 'admin' && $psw == 'iamtheadmin123'){
     $_SESSION['psw']=$psw;
     $_SESSION['login']='yes';
 }else{
-    echo '<script>window.location="../index.php?err=WrongUserOrPass"</script>';
+    echo '<script>window.location="../index.php?err=1"</script>';
 }
 ?>
