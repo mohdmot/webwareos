@@ -6,7 +6,9 @@ $psw = $_GET['psw'];
 
 if (!isset($_SESSION['login'])) { $_SESSION['login']='no'; }
 
-if ($usr == 'admin' && $psw == 'iamtheadmin123'){
+$USERNAME = 'admin';
+$PASSWORD = 'iamtheadmin123';
+if ($usr == $USERNAME && $psw == $PASSWORD){
     echo '<script>window.location="../file_manager.php"</script>';
     $_SESSION['usr']=$usr;
     $_SESSION['psw']=$psw;
