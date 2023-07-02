@@ -21,7 +21,8 @@ login_php = open(f'api{os.sep}login.php')
 login_php_text = login_php.read()
 login_php.close()
 
-login_php_text = login_php_text.replace(old_data[1],password).replace(old_data[0],user)
+login_php_text = login_php_text.replace(f"$PASSWORD = '{old_data[1]}';",f"$PASSWORD = '{password}';")
+login_php_text = login_php_text.replace(f"$USERNAME = '{old_data[0]}';",f"$USERNAME = '{user}';")
 
 login_php = open(f'api{os.sep}login.php','w')
 login_php.write(login_php_text)
