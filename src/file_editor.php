@@ -7,7 +7,7 @@
     if (!isset($_SESSION['login'])) {$_SESSION['login']='no';}
     
     if ($_SESSION['login'] == 'no') {
-        exit('<script>window.location="/index.php"</script>');
+        exit('<script>window.location="index.php"</script>');
     }
 
     $path = '';
@@ -113,7 +113,7 @@
 </head>
 <body style="font-family:'Terminal Medium'; background-color: rgb(15, 15, 15);color: whitesmoke;">
     <h1>File Editor</h1>
-    <a href="/file_manager.php"><button style="width:30px; height:30px; font-size: 20px; position: absolute; top: 23px; right: 10px;">x</button></a>
+    <a href="file_manager.php"><button style="width:30px; height:30px; font-size: 20px; position: absolute; top: 23px; right: 10px;">x</button></a>
     <hr>
     <h3 style='display:inline;'>Path :</h3><input type="text" id="filepath" value="<?php echo 'home/'.$path ?>" style='width:200px;'>
     <span style='position: absolute; right: 10px;'>

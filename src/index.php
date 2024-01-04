@@ -36,6 +36,6 @@
                 </form>
             </div>
         </div>
-        <!-- <p style="left:10px; bottom: 10px;">WebwareOS 0.1.0</p> --> 
+        <p style="color: aliceblue; position: absolute; left:10px; bottom: 10px;">Webware<span style="color: #222222; text-shadow: -0.7px 0 #fff, 0 0.7px #fff, 0.7px 0 #fff, 0 -0.7px #fff;">OS</span> 0.1.0</p>
     </body>
 </html>

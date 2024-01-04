@@ -7,7 +7,7 @@
     if (!isset($_SESSION['login'])) {$_SESSION['login']='no';}
     
     if ($_SESSION['login'] == 'no') {
-        exit('<script>window.location="/index.php"</script>');
+        exit('<script>window.location="index.php"</script>');
     }
 
     $path = '';
@@ -19,7 +19,7 @@
 function file_dialog (path) {
     document.getElementById('file-dialog').showModal()
     document.getElementById('file-dialog-dl').href = 'api/download.php?p='+path
-    document.getElementById('file-dialog-fe').href = '/file_editor.php?p='+path
+    document.getElementById('file-dialog-fe').href = 'file_editor.php?p='+path
 }
 </script>
 <html lang="en">
@@ -169,7 +169,7 @@ function file_dialog (path) {
     &ensp;&ensp;
     <a onclick="document.getElementById('mkdir-dialog').showModal()" class='method' href="#">Mkdir</a>
     &ensp;&ensp;
-    <a class='method' href="/file_editor.php?d=<?php echo $path; ?>">FileEditor</a>
+    <a class='method' href="file_editor.php?d=<?php echo $path; ?>">FileEditor</a>
     &ensp;&ensp;
     <a onclick="document.getElementById('upload-dialog').showModal()" class='method' href="#">Upload</a>
     <br><br>
