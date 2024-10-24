@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+.ico {
+    width: 25px;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.folder {
+    color: #ffffff;
+    display: inline;
+
+}
+
+.file {
+    color: #ffffff;
+    display: inline;
+    
+}
+
+dialog {
+    background-color: rgba(10, 10, 10, 0.5);
+    backdrop-filter: blur(5px);
+    color: #ffffff;
+    border: 3px #ffffff solid;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+}
+
+dialog input {
+    border: 2px #ffffff solid;
+}
+
+input {
+    border-radius: 7px;
+    background-color: #222222;
+    color: #ffffff;
+    font-size: 20px;
+    width: 100%;
+}
+
+dialog h3 {
+    display: inline-block; vertical-align: middle; margin: 0;
+}
+.xbtn {
+    display: inline-block; vertical-align: middle; position: sticky; top: 0; float: right;
+    color: #fff;
+}
+
+button , .button{
+    width: auto;
+    height: 45px;
+    background: #ffffff;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.button {
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    border: 0px #fff solid;
+}
+@media screen and (min-width:700px) {
+    #topbtndiv button {
+        width: 12%;
+    }
+}
+
+hr {
+    border: 1px #fff solid;
+}
+
+#topbtndiv {
+    overflow: hidden;
+}
+.rightbtn {
+    float: right;
+}
+
+button:hover {
+    background: #000;
+    color:#ffffff;
+    border: 2px #fff solid;
+}
+
+#files-box {
+    background: #0a0a0a;
+}
+
+.leftbtn p {
+    display: inline;
+    font-size: 30px;
+}
+
+.dropdown {
+    display: inline;
+}
+
+.dropdown-list {
+    display: none;
+    position:absolute;
+    background-color: #ffffff;
+    border-radius: 15px 0px 15px 15px;
+    border: 2px #fff solid;
+    color: #000000;
+    min-width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 88%;
+}
+@media screen and (min-width:601px) and (max-width:1000px) {
+    .dropdown-list {
+        margin-left: 85%;
+    }
+}
+@media screen and (min-width:451px) and (max-width:600px) {
+    .dropdown-list {
+        margin-left: 80%;
+    }
+}
+@media screen and (max-width:450px) {
+    .dropdown-list {
+        margin-left: 75%;
+    }
+
+}
+.dropdown-list a {
+    color: rgb(0, 0, 0);
+    border-radius: 15px 0px 15px 15px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-list a:hover{background-color: #000000;color: #fff;}
+.dropdown:hover .dropdown-list {display: block;}
+
+
+.fimg {
+    width: 3%;
+}
+.fname {
+    width: 30%;
+}
+.fsize {
+    width: 10%;
+}
+.fdate {
+    width: 35%;
+}
+.fdel {
+    width: 10%;
+}
+.fcpy {
+    width: 10%;
+}
+.fren {
+    width: 10%;
+}
+.fdel a {
+    color: #c01919;
+}
+.fcpy a , .fren a {
+    color: #1938c0;
+    margin-right: 10px;
+}
+
+openfile-dialog-iv {display: none;}
+
+
+.fdet {display: none;}
+
+@media screen and (max-width:580px) {
+    .fsize , .fdate {display: none;}
+    .fdet {display: block;}
+}
+
+
+#src-copy , #src-rename { display: none; }
+
+#showen-img {
+    max-width: 80%;
+    object-fit: contain;
+}
+
+#page-empty {
+    width:30%;
+}
+
+textarea {
+    background: #222222;
+	color:#fff;
+}
+
