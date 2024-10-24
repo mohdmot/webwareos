@@ -16,10 +16,5 @@ By default, the username is `admin` and the password is `iamtheadmin123`.
 - Upload all the files to your hosting platform or run them via XAMPP or Apache from your personal computer.
 - Once you have completed the setup process, you can start uploading your files and using WebwareOS.
 
-
-## Screenshots
-![](https://raw.githubusercontent.com/mohdmot/webwareos/main/img/1.gif)
-![](https://raw.githubusercontent.com/mohdmot/webwareos/main/img/2.gif)
-![](https://raw.githubusercontent.com/mohdmot/webwareos/main/img/3.gif)
-
+  
 We hope you find WebwareOS useful for you. If you have any questions or comments, please feel free to reach out to us via the project's GitHub page. Thank you for using WebwareOS!
