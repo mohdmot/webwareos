@@ -17,20 +17,20 @@ old_data = f.read().split('\n')
 f.close()
 
 # Edit it into login.php
-login_php = open(f'api{os.sep}login.php')
+login_php = open(f'src{os.sep}api{os.sep}login.php')
 login_php_text = login_php.read()
 login_php.close()
 
 login_php_text = login_php_text.replace(f"$PASSWORD = '{old_data[1]}';",f"$PASSWORD = '{password}';")
 login_php_text = login_php_text.replace(f"$USERNAME = '{old_data[0]}';",f"$USERNAME = '{user}';")
 
-login_php = open(f'api{os.sep}login.php','w')
+login_php = open(f'src{os.sep}api{os.sep}login.php','w')
 login_php.write(login_php_text)
 login_php.close()
 
 # Edit Directories Name
-os.rename(old_data[0],user)
-os.rename(f'{user}{os.sep}{old_data[1]}', f'{user}{os.sep}{password}')
+os.rename(f'src{os.sep}'+old_data[0],f'src{os.sep}'+user)
+os.rename(f'src{os.sep}{user}{os.sep}{old_data[1]}', f'src{os.sep}{user}{os.sep}{password}')
 
 # Write New Data
 f = open('login(delete_later).txt','w')
