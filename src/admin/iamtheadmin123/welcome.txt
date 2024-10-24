@@ -1,3 +1,0 @@
-Welcome to your WebwareOS system,
-don't forget to support us with a star on GitHub
-https://github.com/Zaky202/webwareos
